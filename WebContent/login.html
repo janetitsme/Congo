@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="header">
+<img class="headr" src="images/logoCongo.gif"><br>
+<!--<img class="headr" src="images/notes.jpg" >-->
+</div>
+</head>
+
+<body>
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="#">Music Search</a>
+	<ul>
+		<li><a href="index.html" class="album">All Albums</a></li>
+		<li><a href ="artist.html" class="artist">By Artist</a></li>
+		<li><a href="category.html" class="category">By Category</a></li>
+		<li><a href="price.html" class="price">By Price</a></li>
+	</ul>
+</li>
+
+<li><a href="#">Help</a></li>	
+</ul>
+    <title>User Login</title>
+    </head>
+    <body>
+    <center><h1>Login</h1><br>
+    <form method="post" action="LoginServlet">
+        <table border=solid>
+            <tr>
+                <td>
+                    User Name:
+                </td>
+                <td>
+                    <input type="text" name="user">          
+                </td>
+            </tr>
+            <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="password" name="pwd">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+                <td>
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form></center>
+</body>
+</html>

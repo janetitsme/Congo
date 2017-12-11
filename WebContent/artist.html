@@ -1,0 +1,40 @@
+<!--  -->Janet Dsouza -14059185-->
+<!-- HTML file to type artist name in a text box with a button -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Artist search at Congo Corp Music Shop</title>
+<meta charset="UTF-8">
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css"/>
+<LINK REL=StyleSheet HREF="aboutus.css" TYPE="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="header">
+<img class="headr" src="images/logoCongo.gif"><br>
+</div>
+</head>
+
+<body>
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="#">Music Search</a>
+	<ul>
+		<li><a href="index.html" class="album">All Albums</a></li>
+		<li><a href ="artist.html" class="artist">By Artist</a></li>
+		<li><a href="category.html" class="category">By Category</a></li>
+		<li><a href="price.html" class="price">By Price</a></li>
+	</ul>
+</li>
+<li><a href="shoppingPrices">Shopping</a></li>	
+
+<li><a href="#">Help</a></li>	
+</ul>
+
+<form method="POST" action="MusicArtist" class="form">
+<label for="para">Type the Artist name and search to check their music albums</label>
+   <input type=text name="artistname" required placeholder="Type artist name">
+ 
+<p class=submit><input type = "submit" value ="Search"></p>
+</form>
+</body>
+</html>

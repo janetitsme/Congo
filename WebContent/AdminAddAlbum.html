@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Add Album</title>
+
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css"/>
+<LINK REL=StyleSheet HREF="aboutus.css" TYPE="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<div id="header">
+<img class="headr" src="images/logoCongo.gif"><br>
+</div>
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="#">Music Search</a>
+	<ul>
+		<li><a href="index.html" class="album">All Albums</a></li>
+		<li><a href ="artist.html" class="artist">By Artist</a></li>
+		<li><a href="category.html" class="category">By Category</a></li>
+		<li><a href="price.html" class="price">By Price</a></li>
+	</ul>
+</li>
+		<li><a href="#">Admin</a>
+			<ul>
+				<li><a href="CustomerOrders">Customer Orders</a></li>
+				<li><a href="AdminStockUpdate">Update Stock</a></li>	
+		</ul>
+		</li>	
+
+<li><a href="#">Help</a></li>	
+</ul>
+<body>
+<form method="post" action="AdminAddAlbum">
+<fieldset>
+<legend>Add New Album Details</legend>
+<ol>
+<li>
+<label for="artistname"> Artist Name</label>
+<input type="text" name=artistName size=3>
+</li>
+<li>
+<label for="title">Title</label>
+<input type="text" name=title size=3>
+</li>
+<li>
+<label for="category">Category</label>
+<input type="text" name=category size=3>
+</li>
+<li><label for="imagename">Album Cover</label>
+<input type="text" name=albumCover size=3>
+</li>
+<li>
+<label for="nooftracks">No.of Tracks</label>
+<input type="text" name=noOfTracks size=3>
+</li>
+<li>
+<label for="price">Price</label>
+<input type="text" name=Price size=3>
+</li>
+<label for="stockcounr">Stock count</label>
+<input type="text" name=stkCount size=3>
+</ll>
+</ol>
+</fieldset>
+<input type="submit" name=addAlbum value="Add Album" >
+</form>
+</body>
+</html>

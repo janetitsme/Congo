@@ -1,0 +1,249 @@
+<script src="sorttable.js"></script>
+@CHARSET "UTF-8";
+body{
+background-image:url('images/bg.png');
+background-repeat: repeat;/*doesnt work*/
+font-family:Helvetica;
+font-size:13px;
+font-style:Verdana, Tahoma, sans-serif;
+padding:0px;
+}
+h1 {
+    text-align: center;
+} 
+h2{
+margin-bottom:20px;
+color:#474E69;
+}
+h3{
+	color : red;
+	font-weight: bold;
+}
+p.date {
+    text-align: right;
+}
+ img
+	{
+	max-width:100%;
+	max-height:auto;
+	}
+/*Reset*/
+#header {
+    background-color: #4c4e5a;
+	/*height:200px;*/
+	}
+	/* For devices 400px and larger: */
+@media only screen and (min-device-width: 400px) {
+    body { 
+        background-image: url('images/bg.png'); 
+    }
+	
+.headr
+{
+margin:5px auto 0px 450px;
+/*margin:0px auto 0 auto;*/
+}
+.menu,.menu ul,.menu li,.menu a
+{
+margin:0;
+padding:0;
+border:none;
+outline:none;
+}
+/*Positioning*/
+ul.menu
+{
+margin:0px auto 0 auto; /* makes it centered*/
+}
+/*Menu*/
+.menu {
+height:40px;
+width:590px; /*come back to check*/
+background:#4c4e5a;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+/* add gradient*/
+background:linear-gradient(top, #535562 0%, #202023 100%);
+background:-moz-linear-gradient(top, #535562 0%, #202023 100%);
+background:-ms-linear-gradient(top, #535562 0%, #202023 100%);
+background:-webkit-linear-gradient(top, #535562 0%, #202023 100%);
+
+}
+.menu li{
+list-style:none;
+float:left;
+display:block;
+height:40px;
+position:relative;
+}
+
+
+/*Links*/
+.menu li a{
+display:block;
+text-decoration:none;
+font-weight:bold;
+color:#FFF;
+font-size:15px;
+padding:0 15px;
+margin:5px 0;
+line-height:30px;
+border-left:1px solid #393942;
+border-right:1px solid #393942;
+
+transition:color .3s ease;
+-moz-transition:color .3s ease;
+-webkit-transition:color .3s ease;
+}
+
+.menu li:first-child a{ border-left:none;}
+.menu li:last-child a { border-right:none;}
+.menu li:hover > a { color:#b94861;}
+
+/* Sub Menu*/
+
+.menu ul
+{
+position:absolute;         /*it allows other elemnts to fall in place*/
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+opacity:0; /* should be visible only when you hover*/
+background:#575a62;
+
+transition:opacity .25s ease .1s;
+-moz-transition:opacity .25s ease .1s;
+-webkit-transition:opacity .25s ease .1s;
+-ms-transition:opacity .25s ease .1s;
+
+
+}
+
+.menu li:hover  > ul
+{
+opacity:1;
+}
+
+.menu ul li
+{
+height:0;
+overflow:hidden;
+padding:0;
+}
+
+.menu li:hover > ul li{
+height:auto;
+overflow:visible;
+
+}
+.menu ul li a{
+width:100px;
+padding:5px 15px;
+margin:0;
+border:none;
+border-bottom:1px solid #353539;
+}
+.menu ul li:last-child a{ border:none;}
+
+/*Main Content section */
+#main {
+    background-color: #fff;
+    padding:20px 0;
+    overflow: hidden;
+}
+
+input{
+padding:10px;
+border:1px solid #E5E5E5;
+width:200px;
+color:#999999;
+box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+-moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+-webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+-ms-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+}
+
+
+
+input:hover, input:focus
+{
+border-color:1px solid #C9C9C9;
+box-shadow:rgba(0,0,0,0.2) 0px 0px 8px;
+-moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 8px;
+-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 8px;
+}
+
+.form label
+{
+margin-left:10px;
+color:#999999;
+}
+/*this code not working to change color*/
+.submit submit:hover  
+ { 
+ color:#b94861;
+}
+
+/*Submit Button*/
+.submit input
+{
+width:100px;
+height:40px;
+
+background-color:#4c4e5a;
+color:#FFF;
+border-radius:3px;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+
+background:linear-gradient(top, #535562 0%, #202023 100%);
+background:-moz-linear-gradient(top, #535562 0%, #202023 100%);
+background:-ms-linear-gradient(top, #535562 0%, #202023 100%);
+background:-webkit-linear-gradient(top, #535562 0%, #202023 100%);
+
+}
+/*Table layouts*/
+table class="sortable"
+ {
+    table-layout: fixed; 
+    align:center;
+    /*auto|fixed|initial|inherit;*/
+}
+/* Sortable tables */
+table.sortable thead {
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
+}
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+    content: " \25B4\25BE" 
+}
+th {
+	background-color:#4c4e5a;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+/* footer section */
+footer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 1px solid #E0E0E0;
+    padding: 15px 0 15px 20px;
+	margin:0 0 5px;
+    color: #9B9B9B;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+footer a{
+    color: #9B9B9B;
+    text-decoration: none;
+}

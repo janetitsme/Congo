@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+body
+{
+background-image:url("images/bg.png");
+}
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table tbody td {
+		width:20%;
+		display: inline;
+	}
+	
+	
+	table thead { display: none; }
+	table tbody td { display: block; padding: .6rem; min-width:320px;}
+	table tbody tr td:first-child { background: #333; color: #fff; }
+	table tbody td:before {
+				display: inline-block; width: 8rem;
+	}
+	
+	
+	
+	table tfoot td{display:block; }
+	table tfoot td .btn{display:block;}
+	
+}

@@ -1,0 +1,60 @@
+<!-- Janet D'Souza - 14059185 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Price range at Congo Corp Music Shop</title>
+<meta charset="utf-8">
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css"/>
+<LINK REL=StyleSheet HREF="aboutus.css" TYPE="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="header">
+<img class="headr" src="images/logoCongo.gif"><br>
+</div>
+</head>
+
+<body>
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="#">Music Search</a>
+	<ul>
+		<li><a href="index.html" class="album">All Albums</a></li>
+		<li><a href ="artist.html" class="artist">By Artist</a></li>
+		<li><a href="category.html" class="category">By Category</a></li>
+		<li><a href="price.html" class="price">By Price</a></li>
+	</ul>
+</li>
+<li><a href="shoppingPrices">Shopping</a></li>	
+
+
+<li><a href="#">Help</a></li>	
+</ul>
+<form action="PriceSelector" class="form" >
+
+
+<div id="main"><!-- Defining submain content section -->
+  <p class="para">        
+   
+<p class="range">What is your Price Range?</p>
+
+
+      <select name="priceRange">
+      <option value=9.99> less then equal to £9.99</option>
+      <option value=10.99 selected>less then equal to £10.99</option>
+      <option value=11.99> less then equal to £11.99</option>
+      <option  value=12.99> less then equal to £12.99</option>
+      <option value=13.99> less then equal to £13.99</option>
+      <option value=14.99> less then equal to £14.99</option>
+      <option value=15.99> less then equal to £15.99</option>
+      </select>
+    
+ <p class="show">Show all the Albums which are in the selected Range</p>
+	<p class="submit"> 
+	<input type="submit" value="List Albums"> 
+	</p>
+</form>
+<footer><!-- Defining the footer section of the page -->
+<a class="link" href="#">Congo Corp</a><br />
+</footer>
+</body>
+</html>
